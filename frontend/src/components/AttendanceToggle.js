@@ -6,7 +6,7 @@ const AttendanceToggle = ({ student, fetchStudents }) => {
     try {
       // Toggle attendance on backend
       await axios.put(
-        `http://localhost:5000/api/students/${student._id}/attendance`,
+        `https://student-attendance-smev.onrender.com/api/students/${student._id}/attendance`,
       );
       fetchStudents(); // Refetch data to update table & summary
     } catch (err) {
