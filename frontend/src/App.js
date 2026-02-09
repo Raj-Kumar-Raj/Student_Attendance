@@ -9,7 +9,7 @@ function App() {
   const [students, setStudents] = useState([]);
 
   const fetchStudents = async () => {
-    const res = await axios.get("http://localhost:5000/api/students");
+    const res = await axios.get("https://student-attendance-smev.onrender.com/api/students");
     setStudents(res.data);
   };
 
