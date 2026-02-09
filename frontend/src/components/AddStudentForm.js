@@ -8,7 +8,7 @@ const AddStudentForm = ({ fetchStudents }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/students", { name, rollNo });
+      await axios.post("https://student-attendance-smev.onrender.com/api/students", { name, rollNo });
       setName("");
       setRollNo("");
       fetchStudents();
