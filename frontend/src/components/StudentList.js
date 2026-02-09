@@ -6,7 +6,7 @@ const StudentList = ({ students, fetchStudents }) => {
   const deleteStudent = async (id) => {
     if (window.confirm("Are you sure you want to delete this student?")) {
       try {
-        await axios.delete(`http://localhost:5000/api/students/${id}`);
+        await axios.delete(`https://student-attendance-smev.onrender.com/api/students/${id}`);
         fetchStudents(); // Refresh the list
       } catch (err) {
         alert(err.response?.data?.message || "Error deleting student");
