@@ -1,0 +1,133 @@
+/* ---------- General Page Styles ---------- */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ---------- Form Styles ---------- */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Add Student Button */
+form button {
+  background-color: #007bff;
+  color: white;
+}
+
+/* ---------- Table Styles ---------- */
+table {
+  width: 80%;
+  margin: 0 auto 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* ---------- Attendance Button Styles ---------- */
+table button {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+table button:hover {
+  transform: scale(1.05);
+}
+
+/* Present Button */
+button.present {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Absent Button */
+button.absent {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* ---------- Summary Styles ---------- */
+/* Summary Section */
+.summary {
+  background-color: #f0f4ff; /* soft, subtle background */
+  padding: 15px 20px;
+  border-left: 5px solid #4f46e5; /* little accent color on the left */
+  border-radius: 6px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1f2937; /* dark gray text, easy on eyes */
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* subtle shadow */
+}
+
+.summary strong {
+  color: #4f46e5; /* highlight important words */
+}
+
+/* Delete Button */
+button.delete {
+  background-color: #ffc107; /* yellow/orange */
+  color: #333;
+}
+
+button.delete:hover {
+  background-color: #e0a800;
+  color: #fff;
+  transform: scale(1.05);
+}
